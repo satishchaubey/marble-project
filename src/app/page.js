@@ -1,4 +1,5 @@
 import TrendingSlider from "./components/TrendingSlider";
+import AssistanceSection from "./components/AssistanceSection/AssistanceSection";
 
 export default function Home() {
   return (
@@ -217,79 +218,28 @@ export default function Home() {
 
       <section className="presence-section">
         <h2 className="section-title">OUR GLOBAL PRESENCE</h2>
-        <div className="presence-map">
-          <span className="pin pin-america" />
-          <span className="pin pin-europe" />
-          <span className="pin pin-india" />
-          <span className="pin pin-asia" />
-        </div>
+      
         <div className="presence-metrics">
           <article>
             <h3>10+</h3>
-            <p>Years Of Experience</p>
+            <p>Years of Excellence</p>
           </article>
           <article>
             <h3>100+</h3>
-            <p>Collections</p>
+            <p>Marble Designs</p>
           </article>
           <article>
-            <h3>8</h3>
-            <p>Import Countries</p>
+            <h3>8+</h3>
+            <p>Global Export Presence</p>
           </article>
           <article>
             <h3>500+</h3>
-            <p>Project Delivery</p>
+            <p>Projects Completed</p>
           </article>
         </div>
       </section>
 
-      <section className="assistance-section">
-        <h2 className="section-title">ANSWERS &amp; ASSISTANCE</h2>
-        <div className="assistance-grid">
-          <aside className="support-card">
-            <p>OFFICE HELP &amp; SUPPORT</p>
-            <h3>Ready To Guide</h3>
-            <button type="button">CONTACT NOW -&gt;</button>
-          </aside>
-          <div className="faq-list">
-            <details open>
-              <summary>How do I select the right marble type?</summary>
-              <p>
-                Our team helps you choose stone based on finish, space, and
-                usage so it performs well and matches your design intent.
-              </p>
-            </details>
-            <details>
-              <summary>Can I view your slabs before ordering?</summary>
-              <p>
-                Yes, we offer yard visits and curated visual references before
-                final confirmation of your order.
-              </p>
-            </details>
-            <details>
-              <summary>Do you supply outside Bangalore?</summary>
-              <p>
-                Yes, we coordinate supply and logistics across major cities and
-                support on-site delivery scheduling.
-              </p>
-            </details>
-            <details>
-              <summary>What finishes are available?</summary>
-              <p>
-                Polished, leather, honed, and brushed finishes are available
-                based on slab type and project needs.
-              </p>
-            </details>
-            <details>
-              <summary>Can you support custom project quantities?</summary>
-              <p>
-                Absolutely. We handle both boutique and large format quantities
-                with consistent quality checks.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
+      <AssistanceSection />
 
       <section className="contact-panel-section">
         <div className="contact-card">
