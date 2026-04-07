@@ -1,3 +1,5 @@
+import TrendingSlider from "./components/TrendingSlider";
+
 export default function Home() {
   return (
     <div className="home-shell">
@@ -145,74 +147,70 @@ export default function Home() {
         </button>
       </section>
 
-      <section className="trending-section">
-        <h2 className="section-title">TRENDING COLLECTION</h2>
-        <div className="trending-row">
-          <article>
-            <div className="trending-thumb trend-estate" />
-            <p>Estate</p>
-          </article>
-          <article>
-            <div className="trending-thumb trend-white" />
-            <p>White Marble</p>
-          </article>
-          <article>
-            <div className="trending-thumb trend-black" />
-            <p>Black Marble</p>
-          </article>
-          <article>
-            <div className="trending-thumb trend-blue" />
-            <p>Sky Blue</p>
-          </article>
-        </div>
-        <div className="trending-indicator" aria-hidden="true" />
-      </section>
+      <TrendingSlider />
 
       <section className="reviews-section">
-        <div className="reviews-copy">
-          <p className="reviews-kicker">WHAT THEY SAYS FOR</p>
-          <h2>OUR SERVICES</h2>
-          <p className="reviews-quote-mark">&quot;</p>
-          <p className="reviews-quote">
-            We chose Fakhree Marble for our luxury villa project, and the
-            result exceeded expectations. The quality, finishing, and service
-            standards were consistently outstanding.
-          </p>
-          <p className="reviews-author">Arjun Mehta</p>
-          <p className="reviews-role">PROJECT OWNER</p>
-          <span className="reviews-line" aria-hidden="true" />
+        <h2 className="reviews-title">
+          WHAT THEY SAYS FOR
+          <br />
+          OUR SERVICES
+        </h2>
+        <div className="reviews-body">
+          <div className="reviews-copy">
+            <p className="reviews-quote-mark">&quot;</p>
+            <p className="reviews-quote">
+              The Entire Chetak Mall is elevated with Flamed CRYSTAL YELLOW
+              GRANITE which gives a beautiful exterior to our building. Fakhree
+              Marbles has been one of the best vendors we have worked with in
+              terms of Quality, Price and Exquisite designs.
+            </p>
+            <p className="reviews-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </p>
+            <p className="reviews-author">MR. Saifuddin Bhalamwala</p>
+            <p className="reviews-role">(chetak mall project)</p>
+            <div className="reviews-nav" aria-hidden="true">
+              <span>&larr;</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <div className="reviews-image" aria-hidden="true" />
         </div>
-        <div className="reviews-image" aria-hidden="true" />
       </section>
 
       <section className="portfolio-section">
         <h2 className="section-title">OUR PORTFOLIO</h2>
         <div className="portfolio-tabs">
-          <button type="button" className="tab-btn">
-            Villa
+          <button type="button" className="portfolio-tab-btn">
+            India
           </button>
-          <button type="button" className="tab-btn">
-            Resorts
+          <button type="button" className="portfolio-tab-btn active">
+            Kuwait
           </button>
-          <button type="button" className="tab-btn active">
-            Commercial
+          <button type="button" className="portfolio-tab-btn">
+            Canada
           </button>
-          <button type="button" className="tab-btn">
-            Office
+          <button type="button" className="portfolio-tab-btn">
+            Oman
           </button>
-          <button type="button" className="tab-btn">
-            Home
+          <button type="button" className="portfolio-tab-btn">
+            Ukraine
           </button>
-          <button type="button" className="tab-btn">
-            Bangalore
+          <button type="button" className="portfolio-tab-btn">
+            Vietnam
+          </button>
+          <button type="button" className="portfolio-tab-btn">
+            Bangladesh
           </button>
         </div>
 
         <div className="portfolio-preview">
           <div className="portfolio-image" aria-hidden="true" />
           <div className="portfolio-footer">
-            <p>LUXURY LOBBY | Fine Marble In Bangalore</p>
-            <button type="button">VIEW PROJECT -&gt;</button>
+            <p>Luxury Hotel Lobby - Premium Marble Installation</p>
+            <button type="button" className="portfolio-next-btn">
+              View Next Project <span aria-hidden="true">&rarr;</span>
+            </button>
           </div>
         </div>
       </section>
@@ -393,4 +391,3 @@ export default function Home() {
     </div>
   );
 }
-

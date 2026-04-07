@@ -394,197 +394,310 @@ a {
 }
 
 .trending-section {
-  margin-top: 1.2rem;
   background: #ececec;
   color: #141414;
-  padding: 2rem 1.2rem 2.2rem;
+  padding: 2.3rem 1.2rem 2.2rem;
+  overflow: hidden;
 }
 
-.trending-row {
-  margin: 1.15rem auto 0;
-  max-width: 980px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
-  gap: 0.75rem;
+.trending-gallery {
+  margin-top: 1.35rem;
+  margin-left: 2rem;
+  width: calc(100% - 2rem);
+  overflow: hidden;
 }
 
-.trending-row article p {
-  margin: 0.45rem 0 0;
+.trending-track {
+  display: flex;
+  align-items: stretch;
+  transition: transform 360ms ease;
+  will-change: transform;
+}
+
+.trending-card {
+  flex: 0 0 auto;
+}
+
+.trending-card p {
+  margin: 0.7rem 0 0;
   text-align: center;
-  font-size: 0.64rem;
+  font-size: clamp(0.9rem, 1.6vw, 1.9rem);
   color: #2a2a2a;
 }
 
-.trending-thumb {
-  aspect-ratio: 0.86 / 1;
-  border: 1px solid #d4d4d4;
+.trending-media {
+  position: relative;
+  height: clamp(260px, 46vw, 560px);
+  border: 1px solid #d6d6d6;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.trend-granite {
+  background-image: url("/assets/Mask group (4).png");
+}
+
+.trend-white {
+  background-image: url("/assets/Mask group (5).png");
+}
+
+.trend-black {
+  background-image: url("/assets/Mask group (6).png");
+}
+
+.trend-blue {
+  background-image: url("/assets/Mask group (7).png");
+}
+
+.trending-swatch {
+  position: absolute;
+  left: clamp(0.6rem, 1.3vw, 1.2rem);
+  bottom: clamp(0.7rem, 1.4vw, 1.2rem);
+  width: clamp(74px, 9vw, 122px);
+  aspect-ratio: 1 / 1;
+  border: 2px solid #f2f2f2;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.17);
   background-size: cover;
   background-position: center;
 }
 
-.trend-estate {
-  background-image:
-    linear-gradient(180deg, rgba(31, 34, 37, 0.18), rgba(22, 23, 25, 0.08)),
-    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80");
+.swatch-white {
+  background-image: url("/assets/Mask group (3).png");
 }
 
-.trend-white {
-  background-image:
-    linear-gradient(180deg, rgba(31, 34, 37, 0.18), rgba(22, 23, 25, 0.08)),
-    url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80");
+.swatch-black {
+  background-image: url("/assets/image 86.png");
 }
 
-.trend-black {
-  background-image:
-    linear-gradient(180deg, rgba(31, 34, 37, 0.18), rgba(22, 23, 25, 0.08)),
-    url("https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=900&q=80");
+.swatch-blue {
+  background-image: url("/assets/Mask group (7).png");
+  background-size: 290% auto;
+  background-position: 12% 62%;
 }
 
-.trend-blue {
-  background-image:
-    linear-gradient(180deg, rgba(31, 34, 37, 0.18), rgba(22, 23, 25, 0.08)),
-    url("https://images.unsplash.com/photo-1574415941476-29ed1a4f6f98?auto=format&fit=crop&w=900&q=80");
+.trending-nav {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
-.trending-indicator {
-  width: 64px;
-  height: 2px;
-  margin: 1rem auto 0;
-  background: #2f2f2f;
+.trending-nav-btn {
+  width: 2.6rem;
+  height: 2.6rem;
+  background: #f4f4f4;
+  color: #2c2c2c;
+  font-size: 1.45rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.trending-nav-btn:hover:not(:disabled) {
+  background: #232323;
+  border-color: #232323;
+  color: #efefef;
+}
+
+.trending-nav-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .reviews-section {
+  position: relative;
   margin-top: 1.2rem;
-  background:
-    linear-gradient(120deg, rgba(8, 10, 14, 0.98) 0%, rgba(10, 13, 16, 0.98) 58%, rgba(21, 16, 11, 0.94) 100%);
+  background-image: url("/assets/reviews-bg-black.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 1.5rem;
+  padding: 1.9rem 4.5rem 2.3rem;
+}
+
+.reviews-title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.45rem, 3.4vw, 2.35rem);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: rgba(245, 245, 243, 0.96);
+}
+
+.reviews-body {
+  margin-top: 1.7rem;
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1fr);
+  gap: 2rem;
+  align-items: center;
 }
 
 .reviews-copy {
   position: relative;
-  padding: 0.7rem 0.5rem;
-}
-
-.reviews-kicker {
-  margin: 0;
-  font-size: 0.62rem;
-  letter-spacing: 0.15em;
-  color: rgba(242, 242, 241, 0.85);
-}
-
-.reviews-copy h2 {
-  margin: 0.3rem 0 0.85rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
+  padding: 0.2rem 0.3rem;
 }
 
 .reviews-quote-mark {
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 4rem;
+  font-weight: 700;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .reviews-quote {
-  margin: 0.45rem 0 0;
-  max-width: 390px;
-  font-size: 0.74rem;
-  line-height: 1.75;
-  color: rgba(228, 228, 226, 0.78);
+  margin: 0.2rem 0 0;
+  max-width: 560px;
+  font-size: clamp(0.95rem, 1.35vw, 1.95rem);
+  line-height: 1.55;
+  color: rgba(236, 236, 233, 0.92);
+}
+
+.reviews-stars {
+  margin: 1.2rem 0 0;
+  font-size: clamp(1rem, 1.9vw, 1.45rem);
+  letter-spacing: 0.16em;
+  color: #ffb41f;
 }
 
 .reviews-author {
-  margin: 0.8rem 0 0;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  margin: 0.55rem 0 0;
+  font-size: clamp(0.88rem, 1vw, 1.1rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: rgba(242, 242, 240, 0.95);
 }
 
 .reviews-role {
   margin: 0.2rem 0 0;
-  font-size: 0.56rem;
-  letter-spacing: 0.14em;
-  color: rgba(240, 240, 236, 0.68);
+  font-size: clamp(0.68rem, 0.75vw, 0.85rem);
+  letter-spacing: 0.04em;
+  color: rgba(228, 228, 226, 0.75);
 }
 
-.reviews-line {
-  display: block;
-  width: 54px;
-  height: 1px;
-  margin-top: 0.75rem;
-  background: rgba(255, 255, 255, 0.45);
+.reviews-nav {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: rgba(236, 236, 232, 0.9);
+}
+
+.reviews-nav span {
+  font-size: 2rem;
+  line-height: 1;
 }
 
 .reviews-image {
-  min-height: 210px;
+  min-height: clamp(300px, 34vw, 430px);
+  max-width: 640px;
+  width: 100%;
+  justify-self: end;
   border: 1px solid rgba(255, 255, 255, 0.22);
   background-image:
-    linear-gradient(180deg, rgba(28, 24, 19, 0.25), rgba(16, 14, 12, 0.3)),
-    url("https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80");
+    linear-gradient(180deg, rgba(28, 24, 19, 0.06), rgba(16, 14, 12, 0.12)),
+    url("/assets/2045 1.png");
   background-size: cover;
   background-position: center;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.33);
 }
 
 .portfolio-section {
   margin-top: 1.2rem;
-  background: #f5f5f5;
+  background: #e8e8e8;
   color: #111;
-  padding: 1.7rem 1.2rem 1.5rem;
+  padding: 2rem 1.4rem 1.8rem;
+}
+
+.portfolio-section .section-title {
+  font-size: clamp(1.55rem, 2.9vw, 2.3rem);
+  letter-spacing: 0.02em;
 }
 
 .portfolio-tabs {
-  margin: 0.9rem auto 0;
-  max-width: 920px;
-  border-top: 1px solid #cbcbcb;
-  border-bottom: 1px solid #cbcbcb;
-  padding: 0.5rem 0.4rem;
+  margin: 1rem auto 0;
+  max-width: 1120px;
+  border-top: 1px solid #a8a8a8;
+  border-bottom: 1px solid #a8a8a8;
+  padding: 0.48rem 0.35rem;
   display: flex;
   justify-content: center;
-  gap: 0.35rem 0.8rem;
+  gap: 0.35rem 1.65rem;
   flex-wrap: wrap;
 }
 
+.portfolio-tab-btn {
+  border: 0;
+  background: transparent;
+  color: #4a4a4a;
+  font-size: clamp(0.62rem, 0.9vw, 0.78rem);
+  letter-spacing: 0.01em;
+  padding: 0.1rem 0.15rem;
+  cursor: pointer;
+}
+
+.portfolio-tab-btn.active {
+  color: #111;
+  font-weight: 500;
+}
+
 .portfolio-preview {
-  max-width: 920px;
-  margin: 0.9rem auto 0;
-  border: 1px solid #d2d2d2;
-  background: #fff;
+  max-width: 1120px;
+  margin: 1rem auto 0;
 }
 
 .portfolio-image {
-  min-height: 320px;
-  background-image:
-    linear-gradient(180deg, rgba(23, 25, 27, 0.18), rgba(20, 22, 23, 0.06)),
-    url("https://images.unsplash.com/photo-1616594039964-3eb2b8dbe6f9?auto=format&fit=crop&w=1600&q=80");
+  position: relative;
+  min-height: clamp(320px, 51vw, 635px);
+  background-image: url("/assets/2045 1.png");
   background-size: cover;
   background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-image::after {
+  content: "";
+  position: absolute;
+  right: 1.6rem;
+  bottom: 0.75rem;
+  width: 34px;
+  height: 3px;
+  background: #131313;
 }
 
 .portfolio-footer {
-  padding: 0.55rem 0.75rem;
+  padding: 0.8rem 0.05rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
 .portfolio-footer p {
   margin: 0;
-  font-size: 0.6rem;
-  color: #333;
+  font-size: clamp(0.7rem, 0.95vw, 0.9rem);
+  color: #353535;
 }
 
-.portfolio-footer button {
-  border: 1px solid #b9b9b9;
-  background: #fff;
-  color: #2d2d2d;
-  font-size: 0.56rem;
-  letter-spacing: 0.08em;
-  padding: 0.35rem 0.55rem;
+.portfolio-next-btn {
+  border: 1px solid #979797;
+  background: transparent;
+  color: #202020;
+  font-size: clamp(0.62rem, 0.78vw, 0.75rem);
+  letter-spacing: 0.02em;
+  padding: 0.45rem 0.9rem;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.portfolio-next-btn span {
+  font-size: 0.95em;
+  line-height: 1;
 }
 
 .presence-section {
@@ -982,12 +1095,28 @@ a {
     grid-template-columns: repeat(2, minmax(130px, 1fr));
   }
 
-  .trending-row {
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  .trending-gallery {
+    margin-left: 1rem;
+    width: calc(100% - 1rem);
   }
 
-  .reviews-section {
+  .trending-media {
+    height: clamp(250px, 58vw, 420px);
+  }
+
+  .reviews-body {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .reviews-copy {
+    order: 2;
+  }
+
+  .reviews-image {
+    order: 1;
+    justify-self: stretch;
+    min-height: clamp(280px, 48vw, 360px);
   }
 
   .portfolio-image {
@@ -1053,9 +1182,39 @@ a {
     justify-content: flex-start;
   }
 
-  .collection-cards,
-  .trending-row {
+  .collection-cards {
     grid-template-columns: 1fr;
+  }
+
+  .trending-gallery {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .trending-media {
+    height: clamp(260px, 82vw, 430px);
+  }
+
+  .trending-nav-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.2rem;
+  }
+
+  .reviews-section {
+    padding-top: 1.5rem;
+  }
+
+  .reviews-title {
+    font-size: 1.2rem;
+  }
+
+  .reviews-quote-mark {
+    font-size: 2.4rem;
+  }
+
+  .reviews-nav span {
+    font-size: 1.55rem;
   }
 
   .portfolio-tabs {
