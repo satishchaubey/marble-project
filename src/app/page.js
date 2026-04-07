@@ -1,5 +1,6 @@
 import TrendingSlider from "./components/TrendingSlider";
 import AssistanceSection from "./components/AssistanceSection/AssistanceSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <section className="hero-section">
         <header className="site-header">
           <div className="brand-wrap">
-            <img src="/assets/Mask group.png" alt="Fakhree Marble Logo" className="logo" />
+            <img src="/assets/Group 2611639.png" alt="Fakhree Marble Logo" className="logo" />
           </div>
 
           <nav className="site-nav" aria-label="Primary">
@@ -241,100 +242,72 @@ export default function Home() {
 
       <AssistanceSection />
 
-      <section className="contact-panel-section">
-        <div className="contact-card">
-          <h2>CONTACT US</h2>
-          <form className="contact-form-grid">
-            <label>
-              <span>Name</span>
-              <input type="text" placeholder="Your name" />
-            </label>
-            <label>
-              <span>Phone</span>
-              <input type="tel" placeholder="+91" />
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" placeholder="name@email.com" />
-            </label>
-            <label>
-              <span>City</span>
-              <select defaultValue="">
-                <option value="" disabled>
-                  Select city
-                </option>
-                <option>Bangalore</option>
-                <option>Mumbai</option>
-                <option>Delhi</option>
-              </select>
-            </label>
-            <label className="full-row">
-              <span>Your Message</span>
-              <textarea rows={3} placeholder="Tell us about your requirement" />
-            </label>
-            <button type="submit" className="contact-submit-btn">
-              SUBMIT NOW -&gt;
-            </button>
-          </form>
-        </div>
-      </section>
+      <ContactSection />
 
       <footer className="site-footer">
         <div className="footer-overlay" />
         <div className="footer-inner">
           <div className="footer-top">
-            <img src="/assets/Mask group.png" alt="Fakhree Marble Logo" className="footer-logo" />
+            <img src="/assets/Group 2611639.png" alt="Fakhree Marble Logo" className="footer-logo" />
             <div className="footer-socials" aria-label="Social links">
               <a href="#" aria-label="Facebook">
                 f
               </a>
               <a href="#" aria-label="Instagram">
-                i
+                ◎
               </a>
-              <a href="#" aria-label="LinkedIn">
-                in
+              <a href="#" aria-label="X">
+                𝕏
               </a>
               <a href="#" aria-label="YouTube">
-                yt
+                ▶
               </a>
             </div>
           </div>
 
           <div className="footer-columns">
             <div>
-              <h3>USEFUL LINKS</h3>
-              <a href="#">About Us</a>
-              <a href="#">Collections</a>
-              <a href="#">Projects</a>
-              <a href="#">Contact</a>
+              <h3>Useful Links</h3>
+              <a href="#">Home</a>
+              <a href="#">About us</a>
+              <a href="#">International</a>
+              <a href="#">Our projects</a>
+              <a href="#">Our blogs</a>
+              <a href="#">Contact us</a>
             </div>
             <div>
-              <h3>SERVICES</h3>
-              <a href="#">Interior Marble</a>
-              <a href="#">Exterior Stone</a>
-              <a href="#">Custom Finish</a>
-              <a href="#">Bulk Supply</a>
+              <h3>About Us</h3>
+              <a href="#">Our Profile</a>
+              <a href="#">Why Fakhree</a>
+              <a href="#">Founder &amp; Director</a>
+              <a href="#">Our Infrastructure</a>
+              <a href="#">Process</a>
             </div>
-            <div>
-              <h3>CONTACT</h3>
-              <p>+91 90000 00000</p>
-              <p>info@fakhreemarble.com</p>
-              <p>Bangalore, Karnataka</p>
-            </div>
-            <div>
-              <h3>WORK HOURS</h3>
-              <p>Mon - Sat: 10:00 AM - 7:30 PM</p>
-              <p>Sunday: Closed</p>
+            <div className="footer-collections">
+              <h3>Collections</h3>
+              <div className="collection-links">
+                <div>
+                  <a href="#">Granite</a>
+                  <a href="#">Limestone</a>
+                  <a href="#">Marble</a>
+                  <a href="#">Slate</a>
+                </div>
+                <div>
+                  <a href="#">Pebbles</a>
+                  <a href="#">Semi Precious</a>
+                  <a href="#">Sandstone</a>
+                  <a href="#">Landscape</a>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div className="footer-bottom">
-            <p>Copyright 2026 Fakhree Marble. All rights reserved.</p>
-            <div>
-              <a href="#">Terms &amp; Conditions</a>
-              <a href="#">Privacy</a>
-              <a href="#">Support</a>
-            </div>
+        </div>
+        <div className="footer-bottom">
+          <p>© 2026 Fakhree Marble &amp; Granite Export Pvt Ltd. All Rights Reserved.</p>
+          <div>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Disclaimer</a>
           </div>
         </div>
       </footer>
