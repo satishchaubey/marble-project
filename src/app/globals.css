@@ -29,8 +29,7 @@ a {
   text-decoration: none;
 }
 
-.home-shell {
-}
+.home-shell {}
 
 .hero-section,
 .about-section {
@@ -229,13 +228,13 @@ a {
 }
 
 .milestone-section {
-  background: #07090b;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  display: grid;
+  background: #07090b;
+  border: 1px solid #ffffff14;
   grid-template-columns: minmax(320px, 1.1fr) minmax(320px, 1fr);
-  gap: 2rem;
-  padding: 1.6rem;
+  gap: 5rem;
+  padding: 4rem 5rem 4rem 4rem;
+  display: grid;
 }
 
 .milestone-image {
@@ -249,14 +248,14 @@ a {
 }
 
 .milestone-metrics {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  display: flex;
+  gap: 1rem;
 }
 
 .metric-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 0.65rem 0;
+  padding: 1.65rem 0;
 }
 
 .metric-item:last-child {
@@ -265,13 +264,13 @@ a {
 
 .metric-item h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 .metric-item h4 {
   margin: 0.3rem 0 0;
-  font-size: 0.72rem;
+  font-size: 1.3rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(247, 247, 245, 0.88);
@@ -279,7 +278,7 @@ a {
 
 .metric-item p {
   margin: 0.45rem 0 0;
-  font-size: 0.72rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: rgba(230, 230, 226, 0.7);
 }
@@ -294,28 +293,28 @@ a {
 .section-title {
   text-align: center;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 2.4rem;
   letter-spacing: 0.05em;
   color: inherit;
 }
 
 .collections-tabs {
   margin: 1rem auto 0;
-  max-width: 920px;
-  border-top: 1px solid #cacaca;
-  border-bottom: 1px solid #cacaca;
+  max-width: 1220px;
+  border-top: 1px solid #1B1B1B;
+  border-bottom: 1px solid #1B1B1B;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.4rem 0.65rem;
+  gap: 1.4rem 2.65rem;
   padding: 0.6rem 0.8rem;
 }
 
 .tab-btn {
   border: 0;
   background: transparent;
-  font-size: 0.68rem;
+  font-size: 1.2rem;
   color: #5f5f5f;
   cursor: pointer;
   padding: 0.2rem 0.3rem;
@@ -328,17 +327,17 @@ a {
 }
 
 .collection-cards {
-  max-width: 920px;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  gap: 1.75rem;
+  max-width: 1220px;
   margin: 1.3rem auto 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(130px, 1fr));
-  gap: 0.75rem;
 }
 
 .collection-cards article p {
   margin: 0.45rem 0 0;
   text-align: center;
-  font-size: 0.65rem;
+  font-size: 1.51rem;
   color: #272727;
 }
 
@@ -352,7 +351,7 @@ a {
 .black-marble {
   background-image:
     radial-gradient(circle at 18% 24%, rgba(63, 101, 156, 0.35), transparent 45%),
-    linear-gradient(130deg, #02050b 15%, #0f1724 40%, #04060a 82%);
+    url("/assets/image 86.png");
 }
 
 .bronze-marble {
@@ -360,7 +359,7 @@ a {
   place-items: center;
   background-image:
     linear-gradient(145deg, rgba(192, 142, 84, 0.2), rgba(127, 91, 52, 0.28)),
-    linear-gradient(130deg, #6f4c34 10%, #8f6444 42%, #523422 90%);
+    url("/assets/Mask group (1).png");
 }
 
 .bronze-marble span {
@@ -372,13 +371,13 @@ a {
 .green-marble {
   background-image:
     radial-gradient(circle at 32% 22%, rgba(124, 252, 158, 0.4), transparent 38%),
-    linear-gradient(125deg, #0d5e36, #1f8c4f 44%, #0e5a31 85%);
+    url("/assets/Mask group (2).png")
 }
 
 .white-marble {
   background-image:
     linear-gradient(155deg, rgba(190, 194, 201, 0.25), rgba(138, 143, 152, 0.18)),
-    linear-gradient(125deg, #edf0f4, #d4dae2 46%, #e8edf4 84%);
+    url("/assets/Mask group (3).png")
 }
 
 .see-more-btn {
@@ -386,12 +385,11 @@ a {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  border: 1px solid #c5c5c5;
+  border: 1px solid #3b3b3b;
   color: #3b3b3b;
   font-size: 0.62rem;
   letter-spacing: 0.09em;
-  background: #fff;
-  padding: 0.45rem 0.75rem;
+  padding: 1rem 2rem 1rem 2rem;
   cursor: pointer;
 }
 

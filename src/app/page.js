@@ -126,7 +126,7 @@ export default function Home() {
           </article>
           <article>
             <div className="collection-thumb bronze-marble">
-              <span>SEE PRODUCT</span>
+              {/* <span>SEE PRODUCT</span> */}
             </div>
             <p>Bronze Marble</p>
           </article>
